@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week2_1</title>
+</head>
+<body>
+    <h1>
+        1단계 : 게시글 불러오기
+    </h1>
+    <div>
+        <h2 id = "Title"></h2>
+        <p id = "Body"></p>
+    </div>
+
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/posts/1")    //url받아오기
+            .then(response => response.json())                      // 응답 객체(response)를 JSON 형식의 자바스크립트 객체로 변환
+            .then(data => {                                         // 변환된 데이터를 받아서 다음 작업을 진행
+                document.getElementById("Title").textContent = data.title;
+                document.getElementById("Body").textContent = data.body;
+            })
+            .catch(error => console.log("error"));
+    </script>
+</body>
+</html>
