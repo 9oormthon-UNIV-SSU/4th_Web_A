@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>1단계:게시글 불러오기</title>
+</head>
+<body>
+  <h1>1단계:게시글 불러오기</h1>
+  <h2 id="title">제목을 불러오는 중...</h2>
+  <p id="body">내용을 불러오는 중...</p>
+
+  <script>
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('title').textContent = data.title;
+        document.getElementById('body').textContent = data.body;
+      })
+      .catch(error => {
+        console.error('에러 발생:', error);
+        document.getElementById('title').textContent = '에러 발생!';
+        document.getElementById('body').textContent = '데이터를 불러올 수 없습니다.';
+      });
+  </script>
+</body>
+</html>
