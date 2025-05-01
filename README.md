@@ -3,7 +3,7 @@
   
 
 ## 참여자
-| <a href="https://github.com/Chaerrrish"> 채린 | <a href="https://github.com/psubin05"> 수빈 | <a href="https://github.com/hee4040"> 희우 | <a href="https://github.com/jihuN126"> 지훈 |
+| <a href="https://github.com/Chaerrrish"> 채린(스터디장) | <a href="https://github.com/psubin05"> 수빈 | <a href="https://github.com/hee4040"> 희우 | <a href="https://github.com/jihuN126"> 지훈 |
 | --- | --- | --- | --- |
 | <img src="https://github.com/Chaerrrish.png" width="100"> | <img src="https://github.com/psubin05.png" width="100"> | <img src="https://github.com/hee4040.png" width="100"> | <img src="https://github.com/jihuN126.png" width="100"> |
 
