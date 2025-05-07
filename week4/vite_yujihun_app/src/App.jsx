@@ -13,19 +13,13 @@ function App() {
     console.log("aaaaaa!!", inputValue)
     setTodoList([...todoList,inputValue])
   }
-
-  const deleteItem = (indexToDelete) => {
-    const newList = todoList.filter((_, index) => index !== indexToDelete);
-    setTodoList(newList);
-  };
-
   return (
     <main>
       <input value = {inputValue} type="text" 
       onChange={(event)=>setInputValue(event.target.value)}/>
         <button onClick={addItem}>추가</button>
 
-      <TodoBoard todoList={todoList} onDelete={deleteItem}/>
+      <TodoBoard todoList={todoList}/>
     </main>
   );
 }
