@@ -1,0 +1,45 @@
+main {
+  margin: 0 auto;           
+  padding: 40px;
+  font-family: sans-serif;
+  max-width: 400px;        
+  text-align: center;       
+  margin-top: 60px;         
+}
+
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  background-color: #e6f7ff;
+  cursor: pointer;
+}
+
+.todo-item {
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item button {
+  border: 1px solid lightcoral;
+  background-color: #ffe6e6;
+  color: darkred;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 10px;
+}
