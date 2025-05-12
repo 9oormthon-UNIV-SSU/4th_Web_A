@@ -1,0 +1,74 @@
+.todo-item {
+  width: 100%;
+  max-width: 400px;
+  min-height: 50px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  border: 1px solid #d0ebff;
+  border-radius: 8px;
+  background-color: #f1f9ff;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 4px mediumspringgreen;
+}
+
+.todo-item:hover {
+  background-color: aquamarine;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.delete-button {
+  margin-right: auto;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  color: gray;
+  background-color: #c2f3e7;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.delete-button:active {
+  background-color: red;
+  color: white;
+  border-color: darkred;
+}
+
+.btn {
+  background-color: #d9f5fc;
+  border: 2px solid #d9f5fc;
+  color: #333;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: skyblue;
+  border-color: skyblue;
+  cursor: pointer;
+}
+
+.btn.active {
+  background-color: #228be6;
+  color: white;
+  border-color: #1971c2;
+}
+
+input[type="text"] {
+  border: 2px solid aquamarine;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: aquamarine;
+}
+.todo-done {
+  text-decoration: line-through;
+  color: gray;
+}
