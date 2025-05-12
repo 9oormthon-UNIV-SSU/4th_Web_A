@@ -1,0 +1,75 @@
+/*filter 스타일을 만듦*/
+.filter-buttons{
+  display:flex;
+  gap: 10px;
+  margin-bottom:20px;
+  justify-content:center;
+}
+/*filter 버튼 기본 스타일을 만듦*/
+.filter-buttons button{
+  padding:8px 16px;
+  font-size:16px;
+  border:1px solid lightblue;
+  border-radius:4px;
+  background-color:#e6f7ff;
+  cursor:pointer;
+  transition:background-color 0.3s ease,color 0.3s ease;
+}
+/*active 클래스가 있을 때만 스타일이 나타나도록 함*/
+.filter-buttons button.active{
+  background-color:#1f07ef;
+  color:white;
+  border-color:#1f07ef;
+}
+main {
+  margin: 0 auto;           
+  padding: 40px;
+  font-family: sans-serif;
+  max-width: 400px;        
+  text-align: center;       
+  margin-top: 60px;         
+}
+
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  background-color: #e6f7ff;
+  cursor: pointer;
+}
+
+.todo-item {
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item button {
+  border: 1px solid lightcoral;
+  background-color: #ffe6e6;
+  color: darkred;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 10px;
+}
+
+header {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #3b5998;
+  text-align: center;
+}
