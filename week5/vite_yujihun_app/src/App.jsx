@@ -35,7 +35,9 @@ function App() {
   };
 
   const filteredList = todoList.filter(item => {
-    if (filter === '완료') return item.isDone;
+    if (filter === '완료') {
+      return item.isDone;
+    }
     if (filter === '미완료') return !item.isDone;
     return true;
   });
@@ -60,7 +62,6 @@ function App() {
           className={`btn ${filter === '미완료' ? 'active' : ''}`}
           onClick={() => setFilter('미완료')}>미완료</button>
       </div>
-
       {todoList.length === 0 ? (
         <p>할 일이 없습니다</p>
       ) : (
