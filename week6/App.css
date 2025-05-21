@@ -1,0 +1,113 @@
+/*filter 스타일을 만듦*/
+.filter-buttons{
+  display:flex;
+  gap: 10px;
+  margin-bottom:20px;
+  justify-content:center;
+}
+/*filter 버튼 기본 스타일을 만듦*/
+.filter-buttons button{
+  padding:8px 16px;
+  font-size:16px;
+  border:1px solid lightblue;
+  border-radius:4px;
+  background-color:#e6f7ff;
+  cursor:pointer;
+  transition:background-color 0.3s ease,color 0.3s ease;
+}
+/*active 클래스가 있을 때만 스타일이 나타나도록 함*/
+.filter-buttons button.active{
+  background-color:#1f07ef;
+  color:white;
+  border-color:#1f07ef;
+}
+main {
+  margin: 0 auto;           
+  padding: 40px;
+  font-family: sans-serif;
+  max-width: 400px;        
+  text-align: center;       
+  margin-top: 60px;         
+}
+
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  background-color: #e6f7ff;
+  cursor: pointer;
+}
+
+.todo-item {
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item button {
+  border: 1px solid lightcoral;
+  background-color: #ffe6e6;
+  color: darkred;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 10px;
+}
+
+header {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #3b5998;
+  text-align: center;
+}
+
+/* 모달 배경 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 모달 창 */
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
