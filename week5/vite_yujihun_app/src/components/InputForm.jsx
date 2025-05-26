@@ -9,7 +9,8 @@ function InputForm({ inputValue, setInputValue, addItem }) {
         placeholder="할 일을 입력하세요"
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <button className="btn" onClick={addItem}>추가</button>
+      <button className="btn" onClick={addItem}>
+        추가</button>
     </div>
   );
 }
