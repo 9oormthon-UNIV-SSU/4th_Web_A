@@ -9,8 +9,7 @@ export default function Movies() {
       <div className="movies-container">
         {dummy.results.map((item) => {
           return (
-            <Movie
-              
+            <Movie  
               title={item.title}
               poster_path={item.poster_path}
               vote_average={item.vote_average}

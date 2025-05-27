@@ -7,6 +7,7 @@ export default function Home() {
 
   const [word, setWord] = useState('');
 
+  console.log(import.meta.env);
 
   const onClickWord = () => {
     navigate(`/test?sword=${word}`);
