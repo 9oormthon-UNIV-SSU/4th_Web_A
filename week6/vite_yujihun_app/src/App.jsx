@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('todos', JSON.stringify(todoList));
+    localStorage.setItem('todos', JSON.stringify(todoList)); 
   }, [todoList]);
 
   const addItem = () => {
