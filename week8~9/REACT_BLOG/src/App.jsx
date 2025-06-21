@@ -47,7 +47,7 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-  //BrowserRouter : 페이지를 전환할 수 있게 도와줌.
+  // BrowserRouter : 페이지를 전환할 수 있게 도와줌.
   // /write : PostWritePage(글 작성 페이지)
   // /post/:id : PostViewPage (해당 id의 글 보기)
 }
